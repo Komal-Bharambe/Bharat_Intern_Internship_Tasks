@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(80, 82, 157);
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+     display: flex; 
+     /* display: flex; kel ki secenter la row madhe yeta     */
+     list-style: none;
+     margin: 30px;
+}
+
+.navbar ul li{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px 25px;
+    transition: all .5s ease-out;
+}
+
+.navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 10px white;
+}
+
+/* Home Section */
+
+#Home{
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+#Home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    background: url(coding.jfif) no-repeat center center/cover;
+    height: 870px;
+    width: 100%;
+    z-index: -1;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+.headings{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    text-align: center;
+    margin: 40px 0px;
+}
+.btn{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: .5s ease;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: black;
+    box-shadow: 0 0 5px wheat, 0 0 5px wheat, 0 0 5px wheat, 0 0 5px wheat;
+    border-radius: 5px;
+    font-size: large;
+}
+
+/* About Section */
+#about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+
+
+}
+#picture{
+    display: flex;
+}
+#picture img{
+    width: 575px;
+    height: 550px;
+    margin-left: 50px;
+    /* padding-left: 50px; */
+    border-radius: 20px;
+}
+.heading{
+   display: flex;
+   padding-left: 700px;
+   font-weight: 600;
+   margin-bottom: 20px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: large;
+}
+#intro h2 {
+    font-size: 2rem;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#intro p{
+    font-size: large;
+    margin-left: 20px;
+}
+
+/* portfolio */
+
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    padding: 20px;
+
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.gallery img{
+    width: 360px;
+    height: 240px;
+}
+/* service  */
+#skills{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    padding: 20px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 450px;
+    border: 1px solid blue;
+    margin: 15px;
+    align-items: center;
+    text-align: justify;
+    padding: 15px;
+    border-radius: 20px;
+    background-size: 100% ;
+    transition: all .8s;
+}
+.box:hover{
+    background-color: rgb(235, 84, 84);
+    border: none;
+    box-shadow: 0 0 20px rebeccapurple;
+}
+
+/* contact */
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: rgb(78, 59, 59);
+    color: azure;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 20px;
+}
+.input{
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 40%;
+    border: none;
+    outline: auto;
+}
+#message{
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;  
+    outline: auto;
+}
+#send{
+    padding: 8px;
+    margin-top: 20px;
+    width: 5%;
+    outline: auto;
+}
+#send:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+}
